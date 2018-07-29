@@ -1,4 +1,6 @@
 __author__ = 'Mehran'
+# This code finds the up stream path based on the FD matrix after the interactive selection of an arbitrary point
+
 
 # Import arcpy module
 print "importing arcpy (this takes a while)..."

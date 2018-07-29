@@ -1,6 +1,7 @@
-__author__ = 'Mehran'
-# you should define the local variables
-# the results are saved in a folder named FAResults; FA, streamGrid, streamOrderGrid_tif, networkTree_txt, networkCoord_txt, stream_shp, watershed_tif, watershed_shp
+__author__ = 'Mehran Ghandehari'
+# This code calculates flow accumulation and extract streams based on a range of diffrent thresholds
+# The local variables are defined as user inputs
+# the results are saved in a folder named FAResults (FA, streamGrid, streamOrderGrid_tif, networkTree_txt, networkCoord_txt, stream_shp, watershed_tif, watershed_shp)
 
 # Import modules
 import arcpy
@@ -19,14 +20,12 @@ arcpy.gp.toolbox = "C:/Program Files/TauDEM/TauDEM5Arc/TauDEM Tools.tbx";
 arcpy.env.overwriteOutput = "True"
 
 # Local variables:
-
 fillDEM = arcpy.GetParameterAsText(0)
 FD = arcpy.GetParameterAsText(1)
 Results = arcpy.GetParameterAsText(2)
 thresholdStart = arcpy.GetParameterAsText(3)
 thresholdSteps = arcpy.GetParameterAsText(4)
 thresholdEnd = arcpy.GetParameterAsText(5)
-
 
 FA = Results + r"\FA.tif"
 streamGrid = Results + r"\streamGrid"

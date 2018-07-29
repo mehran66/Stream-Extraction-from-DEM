@@ -1,5 +1,7 @@
 __author__ = 'Mehran'
+# This code finds the down stream path based on the FD matrix after the interactive selection of an arbitrary point
 # You should create a point layer first and change the parameter properties of the start point
+# Chnage the address for the TauDEM toolbox
 
 # Import arcpy module
 print "importing arcpy (this takes a while)..."
@@ -67,7 +69,7 @@ fs = arcpy.GetParameter(0)
 if fs == '#' or not fs:
 	fs = "in_memory"
 
-f = arcpy.FeatureSet(fs) # create a 
+f = arcpy.FeatureSet(fs)  
 geom = json.loads(f.JSON)['features'][0]['geometry']
 my_x = geom['x']
 my_y = geom['y']

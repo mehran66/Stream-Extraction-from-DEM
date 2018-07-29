@@ -1,6 +1,7 @@
-__author__ = 'Mehran'
-# you should define the local variables
-# the results are saved in a folder named WFAResults; FA, streamGrid, streamOrderGrid_tif, networkTree_txt, networkCoord_txt, stream_shp, watershed_tif, watershed_shp
+__author__ = 'Mehran Ghandehari'
+# This code calculates weighted flow accumulation and extract streams based on surface area rastre and a range of diffrent thresholds
+# The local variables are defined as user inputs
+# the results are saved in a folder named FAResults (FA, streamGrid, streamOrderGrid_tif, networkTree_txt, networkCoord_txt, stream_shp, watershed_tif, watershed_shp)
 
 # Import modules
 import arcpy

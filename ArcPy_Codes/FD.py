@@ -1,4 +1,5 @@
 __author__ = 'Mehran'
+# Calcuates Flow Direction for a DEM
 # you should define the local variables
 # The inputs are in the MainData folder; DEM
 # the results are saved in a folder named CommonResults; fillDEM, FD, slopeGrid
