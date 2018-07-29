@@ -1,1 +1,0 @@
-1- for upstream and down stream tracing, first you should create a point layer and refer to that in the parameter proerties of you script in the scheme
